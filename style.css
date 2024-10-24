@@ -1,0 +1,45 @@
+img {
+	width: 40vw;
+	margin-left: auto;
+	margin-right: 5vw;
+	display: block;
+	margin-top: calc(100vh - 45vw);
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#vl{
+	height: 100vh;
+	width: 1px;
+	background-color: black;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+#parameters {
+	position: absolute;
+	top: 10px;
+	width: 30vw;
+	left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+#parameters input{
+	width: 100%;
+}
+
+#parameters input[type=number]{
+	width: 5em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Virtual Fidget Spinner</title>
+	<meta name="description"
+		content="A virtual fidget spinner. Inspired by ffffidget.com. Just another random useless thing.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" async defer>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<img src="spinner.png" id="spinner" draggable="false" />
+	<div id="parameters">
+		<label for="friction">Friction (<input id="frictionNum" type="number" min="0" max="1000" value="1"/>)</label>
+		<input id="friction" type="range" min="0" max="999" value="1">
+
+
+		<label for="velocity">Velocity (<input id="velocityNum" type="number" min="-100000" max="100000" value="0"/>)</label>
+		<input id="velocity" type="range" min="-100000" max="100000" value="0">
+
+	</div>
+	<div id="selection">
+		<div id="two"><img src=""></div>
+	</div>
+	<div id="vl"></div>
+	<script src="script.js" async defer></script>
+</body>
+
+</html>
